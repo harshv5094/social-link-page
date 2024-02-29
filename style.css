@@ -1,0 +1,42 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400 600 700;
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+@media only screen and (max-width: 1440px) {
+  body {
+    background-color: var(--dark-grey);
+    height: 100vh;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 8em;
+    height: 8em;
+  }
+
+  .link-container {
+    width: 25em;
+    height: 30em;
+    background-color: var(--grey);
+    padding: 10px;
+    border-radius: 1em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .link-container {
+    width: 20em;
+    height: 36em;
+  }
+}
