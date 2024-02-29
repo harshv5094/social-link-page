@@ -1,6 +1,5 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-weight: 400 600 700;
   --green: hsl(75, 94%, 57%);
   --white: hsl(0, 0%, 100%);
   --grey: hsl(0, 0%, 20%);
@@ -19,10 +18,10 @@ body {
 }
 
 .link-container {
+  padding: 2em 0.5em;
   width: 25em;
   height: 35em;
   background-color: var(--dark-grey);
-  padding: 10px;
   border-radius: 1em;
 }
 
@@ -32,29 +31,53 @@ img {
   height: 7em;
 }
 
-
 h1 {
-  margin: 0.3em 0em 0em 0em;
+  margin: 0.6em 0em 0em 0em;
+  font-weight: 700;
 }
 
 h3 {
   color: var(--green);
-  margin: 0.5em 0em 1em 0em;
+  margin: 0.5em 0em 0em 0em;
+  font-weight: 600;
 }
 
 h4 {
   font-weight: normal;
-  margin: 0em 0em 1em 0em;
+  margin: 1.3em 0em 1.4em 0em;
+  font-weight: 400;
+}
+
+p {
+  font-size: 14px;
+}
+
+.media-button {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 600;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  margin: 1em 2em;
+  border-radius: 0.8em;
+  background-color: var(--grey);
 }
 
 @media only screen and (max-width: 375px) {
   .link-container {
+    padding: 2em 0.5em;
     width: 20em;
-    height: 36em;
+    height: 34em;
   }
 
   img {
     width: 6em;
     height: 6em;
+  }
+
+  .media-button {
+    margin: 1em 0.5em;
   }
 }
